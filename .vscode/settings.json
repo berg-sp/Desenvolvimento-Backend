@@ -5,5 +5,9 @@
         "c:\\Users\\bergb\\OneDrive\\Área de Trabalho\\jackson-core-2.17.2.jar",
         "c:\\Users\\bergb\\OneDrive\\Área de Trabalho\\jackson-databind-2.17.2.jar"
     ],
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.sourcePaths": [
+        "Aulas/aula03/Aula03/src",
+        "Aulas/aula03/ex01/src/main/java/com/example/demo"
+    ]
 }
