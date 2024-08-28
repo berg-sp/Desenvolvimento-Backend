@@ -1,0 +1,2 @@
+AlunoController ProfessorController -> Rotas/AlunoController
+AlunoService    ProfessorService    -> Lógica de negócio 
