@@ -1,9 +1,8 @@
 package com.example.uti.repository;
 
-import java.util.List;
-
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 import com.example.uti.model.Leito;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -22,11 +21,8 @@ public class LeitoRepository {
         List<Leito> leitos = null;
 
         if (arquivo.length() > ZERO_BYTES) {
-            leitos = objectMapper.readValue(arquivo, new TypeReference<ArrayList<Leito>>());
-        } else {
-            leitos = new ArrayList<>();
+            leitos = objectMapper.readValue(arquivo, new TypeReference<ArrayList<Leito>>() {});
         }
-
         return leitos;
     }
 

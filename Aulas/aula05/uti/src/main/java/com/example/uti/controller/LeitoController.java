@@ -1,7 +1,6 @@
-package com.example.uti.controller;
+  package com.example.uti.controller;
 
 import java.util.List;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,12 +17,13 @@ public class LeitoController {
     private LeitoService service = new LeitoService();
 
     @GetMapping
-    public List<Leito> listaLeitos() throws Exception {
+    public List<Leito> listarLeitos() throws Exception {
         return service.listarTodosOsLeitos();
     }
 
     @PostMapping
-    public String cadastraNovoLeito(@RequestBody Leito leito) throws Exception {
+    public String cadastrarNovoLeito(@RequestBody Leito leito) throws Exception {
         return service.cadastrarNovoLeito(leito);
     }
+
 }

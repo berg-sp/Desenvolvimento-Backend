@@ -14,8 +14,9 @@ public class LeitoService {
 
     public String cadastrarNovoLeito(Leito leito) throws Exception {
         if (repository.save(leito)) {
-            return "Leito " + leito.getId() + " foi cadastrado com sucesso.";
+            return "Leito " + leito.getId() + " foi cadastrado com suceso";
         }
-        return "Leitos devem ter ids únicos.";
+        return "Leitos deve ter ids únicos";
     }
+
 }

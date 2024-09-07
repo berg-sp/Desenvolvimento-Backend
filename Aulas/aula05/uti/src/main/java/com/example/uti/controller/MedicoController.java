@@ -17,13 +17,14 @@ public class MedicoController {
     private MedicoService service = new MedicoService();
 
     @GetMapping
-    public List<Medico> listarMedicos() {
+    public List<Medico> listarMedicos() throws Exception {
         return service.listarMedicos();
     }
 
     @PostMapping
-    public String cadastrarNovoMedico(@RequestBody Medico medico) throws Exception{
+    public String cadastrarNovoMedico(@RequestBody Medico medico) throws Exception {
         return service.cadastrarNovoMedico(medico);
+        
     }
 
 }

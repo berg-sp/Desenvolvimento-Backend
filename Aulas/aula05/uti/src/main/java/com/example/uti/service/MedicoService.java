@@ -8,14 +8,15 @@ import com.example.uti.repository.MedicoRepository;
 public class MedicoService {
     private MedicoRepository repository = new MedicoRepository();
 
-    public List<Medico> listarMedicos() {
+    public List<Medico> listarMedicos() throws Exception {
         return repository.getAll();
     }
 
-    public String cadastroNovoMedico(Medico medico) {
+    public String cadastrarNovoMedico(Medico medico) throws Exception {
         if (repository.save(medico)) {
-            return "Medico " + medico.getNome() + " foi cadastrado com sucesso";           
+            return "Medico " + medico.getNome() + " foi cadastrado com sucesso";
         }
-        return "Medicos devem ter CRM único";
+        return "Médicos devem ter CRM único";
     }
+
 }

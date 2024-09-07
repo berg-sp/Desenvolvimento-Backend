@@ -3,14 +3,13 @@ package com.example.uti.model;
 public class Medico {
     private int crm;
     private String nome;
-    private String especilidade;
+    private String especialidade;
     public Medico() {
-
     }
-    public Medico(int crm, String nome, String especilidade) {
+    public Medico(int crm, String nome, String especialidade) {
         this.crm = crm;
         this.nome = nome;
-        this.especilidade = especilidade;
+        this.especialidade = especialidade;
     }
     public int getCrm() {
         return crm;
@@ -24,12 +23,10 @@ public class Medico {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getEspecilidade() {
-        return especilidade;
+    public String getespecialidade() {
+        return especialidade;
     }
-    public void setEspecilidade(String especilidade) {
-        this.especilidade = especilidade;
+    public void setespecialidade(String especialidade) {
+        this.especialidade = especialidade;
     }
-    
-
 }
