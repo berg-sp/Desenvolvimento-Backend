@@ -1,1 +1,5 @@
-[{"id":1,"placa_veiculo":"ABC133","esta_ocupada":false},{"id":2,"placa_veiculo":"XYZ789","esta_ocupada":true}]
+[
+  { "id": 1, "placa_veiculo": "ABC133", "esta_ocupada": false },
+  { "id": 2, "placa_veiculo": "XYZ789", "esta_ocupada": true },
+  { "id": 3, "placa_veiculo": "DEF456", "esta_ocupada": true }
+]
