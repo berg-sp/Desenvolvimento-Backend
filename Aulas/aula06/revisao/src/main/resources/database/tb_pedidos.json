@@ -1,1 +1,1 @@
-[{"id":1,"descricao":"Pedido mesa 1","pratos":[{"id":1,"nome":"Feijoada","preço":null},{"id":2,"nome":"Bife com fritas","preço":null}]}]
+[{"id":2,"descricao":"Pedido mesa 1","pratos":[{"id":1,"nome":"feijoada","preco":40.00},{"id":2,"nome":"Bife com fritas","preco":35.00}]}]

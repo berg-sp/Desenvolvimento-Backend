@@ -16,11 +16,11 @@ public class PedidoRepository {
 
     public List<Pedido> getAll() throws IOException {
         if (!arquivo.exists()) {
-            arquivo.createNewFile();            
+            arquivo.createNewFile();
         }
 
         if (arquivo.length() > ZERO_BYTES) {
-            return objectMapper.readValue(arquivo, new TypeReference<List<Pedido>>() {});            
+            return objectMapper.readValue(arquivo, new TypeReference<List<Pedido>>(){});
         }
         return new ArrayList<>();
     }

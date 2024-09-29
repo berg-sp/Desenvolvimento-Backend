@@ -7,7 +7,7 @@ public class Pedido {
     private String descricao;
     private List<Prato> pratos;
 
-    public Pedido() {}
+    public Pedido(){}
 
     public Pedido(int id, String descricao, List<Prato> pratos) {
         this.id = id;
@@ -38,7 +38,4 @@ public class Pedido {
     public void setPratos(List<Prato> pratos) {
         this.pratos = pratos;
     }
-
-    
-
 }

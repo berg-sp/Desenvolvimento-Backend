@@ -5,14 +5,14 @@ import java.math.BigDecimal;
 public class Prato {
     private int id;
     private String nome;
-    private BigDecimal preço;
+    private BigDecimal preco;
 
-    public Prato() {}
+    public Prato(){}
 
-    public Prato(int id, String nome, BigDecimal preço) {
+    public Prato(int id, String nome, BigDecimal preco) {
         this.id = id;
         this.nome = nome;
-        this.preço = preço;
+        this.preco = preco;
     }
 
     public int getId() {
@@ -31,12 +31,11 @@ public class Prato {
         this.nome = nome;
     }
 
-    public BigDecimal getPreço() {
-        return preço;
+    public BigDecimal getPreco() {
+        return preco;
     }
 
-    public void setPreço(BigDecimal preço) {
-        this.preço = preço;
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
     }
-
 }
